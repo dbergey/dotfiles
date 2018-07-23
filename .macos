@@ -1,6 +1,4 @@
-
-# Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+xcode-select --install
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -32,6 +30,13 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 1
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
+osascript -e 'tell app "Finder" to restart'
+
+
+########################################
+# Dock
+########################################
+
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
 
@@ -40,6 +45,12 @@ defaults write com.apple.dock show-process-indicators -bool true
 
 # Wipe all (default) app icons from the Dock
 defaults write com.apple.dock persistent-apps -array
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+osascript -e 'tell app "Dock" to quit'
+
 
 # Hot corners
 # Possible values:
