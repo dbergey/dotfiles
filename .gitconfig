@@ -1,0 +1,51 @@
+[user]
+	name = Daniel Bergey
+	email = dbergey@gmail.com
+[github]
+	user = dbergey
+[alias]
+	ci = commit
+	st = status
+	di = diff
+	co = checkout
+	br = branch
+	pu = pull
+	sta = stash
+	sub = submodule
+	pr = pull --rebase
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	st = status -sb
+	cp = cherry-pick
+	create-pull-request = !sh -c 'stash pull-request $0'
+[color]
+	ui = auto
+	branch = auto
+	status = auto
+[core]
+	excludesfile = /Users/dbergey/.gitignore
+	editor = atom --wait
+	editor = vi
+	fsyncobjectfiles = true
+[pull]
+	rebase = true
+[push]
+	default = current
+[credential]
+	helper = osxkeychain
+[diff]
+	algorithm = patience
+[http]
+	postBuffer = 524288000
+[rebase]
+    autoSquash = true
+    autoStash = true
+[rerere]
+    # Remember and re-apply your git conflict resolutions. This is magic: https://www.kernel.org/pub/software/scm/git/docs/git-rerere.html
+    enabled = true
+[status]
+    # Painfully verbose (but vitally important) info about submodules.
+    submodulesummary = true
+[merge]
+    tool = opendiff
+    log = true
+[mergetool]
