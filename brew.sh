@@ -19,11 +19,11 @@ brew cask install franz
 brew cask install hazel
 brew cask install alfred
 brew cask install iterm2
-brew cask install vscode
 brew cask install finicky
 brew cask install istat-menus
 brew cask install google-chrome
 brew cask install resolutionator
+brew cask install visual-studio-code
 brew cask install safari-technology-preview
 
 # install fonts
