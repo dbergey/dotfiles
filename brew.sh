@@ -34,6 +34,7 @@ brew cask install resolutionator
 
 # install app store apps
 brew install mas
+mas install 497799835 # XCode
 mas install 766939888 # 1Keyboard
 mas install 924726344 # Deliveries
 mas install 1191449274 # ToothFairy
