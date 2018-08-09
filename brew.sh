@@ -6,6 +6,7 @@ brew install gti
 brew install tig
 brew install htop
 brew install nodejs
+brew install tinyproxy
 brew install ssh-copy-id
 
 # install new versions of apple packages
@@ -19,9 +20,12 @@ brew cask install iterm2
 brew cask install dropbox
 brew cask install finicky
 brew cask install sequel-pro
+brew cask install virtualbox
 brew cask install google-chrome
 brew cask install visual-studio-code
 brew cask install safari-technology-preview
+brew cask install virtualbox-extension-pack
+
 # install paid apps
 brew cask install moom
 brew cask install hazel
