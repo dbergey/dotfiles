@@ -14,17 +14,17 @@ brew install git
 brew install zsh
 
 # install free apps
-brew cask install franz
+# brew cask install franz
 brew cask install aerial
 brew cask install iterm2
 brew cask install dropbox
 brew cask install finicky
 brew cask install discord
-brew cask install sequel-pro
+# brew cask install sequel-pro
 # brew cask install virtualbox
 brew cask install google-chrome
 brew cask install visual-studio-code
-brew cask install safari-technology-preview
+# brew cask install safari-technology-preview
 # brew cask install virtualbox-extension-pack
 
 # install gamez
@@ -47,6 +47,7 @@ brew cask install resolutionator
 # install app store apps
 brew install mas
 mas install 497799835 # XCode
+mas install 1107421413 # 1Blocker
 mas install 766939888 # 1Keyboard
 mas install 924726344 # Deliveries
 mas install 1191449274 # ToothFairy
