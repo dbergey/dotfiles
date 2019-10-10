@@ -43,6 +43,7 @@ brew cask install rocket
 brew cask install 1password
 brew cask install istat-menus
 brew cask install resolutionator
+brew cask install hammerspoon
 
 # install app store apps
 brew install mas
