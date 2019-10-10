@@ -50,6 +50,7 @@ appKey({'ctrl', 'alt'}, 'H', 'Tweetbot')
 appKey({'ctrl', 'alt'}, 'E', { 'Microsoft Outlook', 'Mail' })
 appKey({'ctrl', 'alt'}, 'T', 'iTunes')
 appKey({'ctrl', 'alt'}, 'N', 'Notes')
+appKey({'ctrl', 'alt'}, 'K', 'Console')
 
 -- moom substitute
 hs.window.animationDuration = 0
