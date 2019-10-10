@@ -75,10 +75,10 @@ winKey({'shift', 'alt', 'ctrl'}, 'Up', '1,0, 3x3');
 
 -- move display right
 hs.hotkey.bind({'ctrl', 'alt'}, 'Right', function()
-	hs.window.focusedWindow().moveOneScreenEast()
+	hs.window.focusedWindow():moveOneScreenEast()
 end)
 
 -- move display left
 hs.hotkey.bind({'ctrl', 'alt'}, 'Left', function()
-  hs.window.focusedWindow().moveOneScreenWest()
+  hs.window.focusedWindow():moveOneScreenWest()
 end)
