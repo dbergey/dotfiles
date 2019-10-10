@@ -74,23 +74,10 @@ winKey({'shift', 'alt', 'ctrl'}, 'Up', '1,0, 3x3');
 
 -- move display right
 hs.hotkey.bind({'ctrl', 'alt'}, 'Right', function()
-	local win = hs.window.focusedWindow();
-  local cell = hs.grid.getCell(win)
-  local toScreen = hs.screen.mainScreen().toEast()
-
-	if not toScreen then
-	  hs.grid.set(win, cell, toScreen)
-	end
-
+	hs.window.focusedWindow().moveOneScreenEast()
 end)
 
 -- move display left
 hs.hotkey.bind({'ctrl', 'alt'}, 'Left', function()
-  local win = hs.window.focusedWindow();
-  local cell = hs.grid.getCell(win)
-  local toScreen = hs.screen.mainScreen().toWest()
-
-  if not toScreen then
-    hs.grid.set(win, cell, toScreen)
-  end
+  hs.window.focusedWindow().moveOneScreenWest()
 end)
