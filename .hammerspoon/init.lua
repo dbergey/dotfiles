@@ -5,8 +5,8 @@ spoon.ReloadConfiguration:start()
 -- clipboard history
 hs.loadSpoon('ClipboardTool')
 spoon.ClipboardTool:start()
--- ClipboardTool.paste_on_select = true
--- ClipboardTool.max_size = true
+spoon.ClipboardTool.paste_on_select = true
+spoon.ClipboardTool.max_size = true
 hs.hotkey.bind({ 'cmd', 'alt'}, 'V', function()
   spoon.ClipboardTool:showClipboard()
 end)
