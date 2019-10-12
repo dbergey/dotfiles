@@ -3,12 +3,11 @@ function appKey(modifiers, key, apps)
 	hs.hotkey.bind(modifiers, key, function()
 		if (type(apps) == 'string') then
 			-- open specified app
-			hs.application.launchOrFocus(apps)
+			hs.application.open(apps)
 		else
 			-- launch first app that exists
 			for _, app in ipairs(apps) do
-				if (hs.application.find(app)) then
-					hs.application.launchOrFocus(app)
+				if (hs.application.open(app)) then
 					break
 				end
 			end
